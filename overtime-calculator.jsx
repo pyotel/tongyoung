@@ -288,6 +288,7 @@ export default function OvertimeCalc() {
             <div style={S.tag}>OVERTIME TRACKER</div>
             <h1 style={S.title}>시간 외 근무 계산기</h1>
           </div>
+          <img src="/logo.png" alt="새통영병원" style={S.logoImg}/>
           <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",gap:8}}>
             <div style={S.mpicker}>
               <select value={year} onChange={e=>setYear(+e.target.value)} style={S.sel}>
@@ -475,7 +476,7 @@ export default function OvertimeCalc() {
       </main>
 
       <footer style={S.footer}>
-        <span>Developed by <a href="mailto:pyotel@gmail.com" style={S.footerLink}>Inpyo Cho</a>, <a href="mailto:badger2002@naver.com" style={S.footerLink}>Jaeyoung Lee</a></span>
+        <span>Developed by <a href="mailto:pyotel@gmail.com" style={S.footerLink}>Inpyo Cho</a>, <a href="mailto:badger2002@naver.com" style={S.footerLink}>Jaehyeong Lee</a></span>
       </footer>
     </div>
   );
@@ -484,6 +485,7 @@ export default function OvertimeCalc() {
 /* ── 스타일 ── */
 const S = {
   page:{fontFamily:"'Noto Sans KR',sans-serif",background:"#f4f5f7",minHeight:"100vh"},
+  logoImg:{maxHeight:60,objectFit:"contain",background:"#fff",borderRadius:8,padding:"5px 14px"},
   header:{background:"#1a237e",color:"#fff"},
   headerInner:{maxWidth:900,margin:"0 auto",padding:"24px 24px 20px",display:"flex",justifyContent:"space-between",alignItems:"flex-end"},
   tag:{fontSize:10,letterSpacing:3,color:"#9fa8da",marginBottom:6,fontWeight:600},
