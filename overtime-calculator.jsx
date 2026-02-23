@@ -473,6 +473,10 @@ export default function OvertimeCalc() {
           </div>
         )}
       </main>
+
+      <footer style={S.footer}>
+        <span>Developed by <a href="mailto:pyotel@gmail.com" style={S.footerLink}>Inpyo Cho</a>, <a href="mailto:badger2002@naver.com" style={S.footerLink}>Jaeyoung Lee</a></span>
+      </footer>
     </div>
   );
 }
@@ -546,4 +550,7 @@ const S = {
   ibtnD:{background:"none",border:"none",cursor:"pointer",fontSize:13,color:"#ef9a9a",padding:"2px 5px"},
 
   empty:{textAlign:"center",padding:"60px 0"},
+
+  footer:{textAlign:"center",padding:"24px 16px",color:"#9e9e9e",fontSize:12,borderTop:"1px solid #e0e0e0",marginTop:32},
+  footerLink:{color:"#7986cb",textDecoration:"none"},
 };
